@@ -52,7 +52,7 @@ contract Campaign {
     function createRequest(string description, uint value, address recipient) 
         public restricted {
             
-        require(approvers[msg.sender]);
+        //require(approvers[msg.sender]);
         
         SpendRequest memory request = SpendRequest({
             description: description,
