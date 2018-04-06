@@ -1,12 +1,12 @@
 /*
  * File: /Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/pages/index.js
- * Last Modified: Wednesday April 4th 2018 12:48:28 pm
+ * Last Modified: Thu Apr 05 2018
  */
 import React from 'react';
 import { Card, Button } from "semantic-ui-react";
 import factory from '../ethereum/factory';
-import Layout from '../components/layout';
-
+import Layout from '../components/Layout';
+import { Link } from '../routes';
 class CampaignIndex extends React.Component {
   static async getInitialProps() {
     const campaigns = await factory.methods.getDeployedCampaigns().call();
@@ -17,7 +17,7 @@ class CampaignIndex extends React.Component {
     const items = this.props.campaigns.map(address => {
       return {
         header: address,
-        description: <a>View Campaign</a>,
+        description: <Link route={`/campaigns/${address}`}><a>View Campaign</a></Link>,
         fluid: true
       }
     });
@@ -28,15 +28,22 @@ class CampaignIndex extends React.Component {
     return (
       <Layout>
         <div>
-          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
 
           <h3>Open Campaigns</h3>
+
+          <Link route="/campaigns/new">
+            <a>
+              <Button
+                content="Create Campaign"
+                icon="add circle"
+                primary
+                floated="right"
+              />
+            </a>
+          </Link>
+
           {this.renderCampaigns()}
-          <Button
-            content="Create Campaign"
-            icon="add circle"
-            primary
-          />
+
         </div>
       </Layout>
     );

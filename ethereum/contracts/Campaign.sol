@@ -87,5 +87,24 @@ contract Campaign {
         request.vendorAddress.transfer(request.value);
         request.complete = true;
     }
+
+    function getSummary() public view returns (uint, uint, uint, uint, address) {
+        return (
+          // * Campaign Balance
+          // * Min Contribution
+          // * Pending Requests
+          // * Contributor Count
+
+          minContribution,
+          address(this).balance,
+          spendRequests.length,
+          approversCount,
+          manager
+        );
+    }
+
+    function getRequestsCount() public view returns (uint) {
+        return spendRequests.length;
+    }
 }
 
