@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -318,6 +318,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__("./components/Layout.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ethereum_campaign__ = __webpack_require__("./ethereum/campaign.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_semantic_ui_react__);
 
 var _jsxFileName = '/Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/pages/campaigns/detail.js';
 
@@ -334,8 +336,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /*
  * File: /Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/pages/campaigns/detail.js
  * Created Date: Thursday April 5th 2018
- * Modified By: M.Beeson at b33son@gmail.com
+ * Modified By: M.Beeson
  */
+
 
 
 
@@ -351,14 +354,53 @@ var CampaignDetail = function (_Component) {
   }
 
   _createClass(CampaignDetail, [{
-    key: 'render',
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */], {
-        __source: {
+    key: 'renderCards',
+    value: function renderCards() {
+      var _props = this.props,
+          minContribution = _props.minContribution,
+          campaignBalance = _props.campaignBalance,
+          spendRequestsCount = _props.spendRequestsCount,
+          approversCount = _props.approversCount,
+          managerAddress = _props.managerAddress;
+
+
+      var items = [{
+        header: managerAddress,
+        meta: 'Address of manager',
+        description: 'The creator of the campaign. Creates requests to withdraw money',
+        style: { overflowWrap: 'break-word' }
+      }];
+
+      // https://react.semantic-ui.com/views/card#card-example-group-props
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_semantic_ui_react__["Card"].Group, { items: items, __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 42
         }
       });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */],
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h3',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 48
+            }
+          },
+          'Campaign Show'
+        ),
+        this.renderCards()
+      );
     }
   }], [{
     key: 'getInitialProps',
@@ -423,7 +465,7 @@ module.exports = routes;
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/campaigns/detail.js");

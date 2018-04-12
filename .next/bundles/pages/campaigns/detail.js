@@ -2,7 +2,7 @@ module.exports =
 
         __NEXT_REGISTER_PAGE('/campaigns/detail', function() {
           var comp = 
-      webpackJsonp([3],{
+      webpackJsonp([4],{
 
 /***/ "./components/Header.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2554,7 +2554,7 @@ function fromByteArray (uint8) {
 
   var Buffer;
   try {
-    Buffer = __webpack_require__(6).Buffer;
+    Buffer = __webpack_require__(5).Buffer;
   } catch (e) {
   }
 
@@ -5992,7 +5992,7 @@ if (typeof self === 'object') {
 } else {
   // Node.js or Web worker with no crypto support
   try {
-    var crypto = __webpack_require__(7);
+    var crypto = __webpack_require__(6);
     if (typeof crypto.randomBytes !== 'function')
       throw new Error('Not supported');
 
@@ -45385,7 +45385,7 @@ util.inherits = __webpack_require__("./node_modules/inherits/inherits_browser.js
 /*</replacement>*/
 
 /*<replacement>*/
-var debugUtil = __webpack_require__(4);
+var debugUtil = __webpack_require__(3);
 var debug = void 0;
 if (debugUtil && debugUtil.debuglog) {
   debug = debugUtil.debuglog('stream');
@@ -47262,7 +47262,7 @@ Writable.prototype._destroy = function (err, cb) {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Buffer = __webpack_require__("./node_modules/safe-buffer/index.js").Buffer;
-var util = __webpack_require__(5);
+var util = __webpack_require__(4);
 
 function copyBuffer(src, target, offset) {
   src.copy(target, offset);
@@ -114774,6 +114774,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__("./components/Layout.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ethereum_campaign__ = __webpack_require__("./ethereum/campaign.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_semantic_ui_react__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/index.js");
 
 var _jsxFileName = '/Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/pages/campaigns/detail.js';
 
@@ -114796,8 +114797,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /*
  * File: /Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/pages/campaigns/detail.js
  * Created Date: Thursday April 5th 2018
- * Modified By: M.Beeson at b33son@gmail.com
+ * Modified By: M.Beeson
  */
+
 
 
 
@@ -114813,14 +114815,53 @@ var CampaignDetail = function (_Component) {
   }
 
   _createClass(CampaignDetail, [{
-    key: 'render',
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */], {
-        __source: {
+    key: 'renderCards',
+    value: function renderCards() {
+      var _props = this.props,
+          minContribution = _props.minContribution,
+          campaignBalance = _props.campaignBalance,
+          spendRequestsCount = _props.spendRequestsCount,
+          approversCount = _props.approversCount,
+          managerAddress = _props.managerAddress;
+
+
+      var items = [{
+        header: managerAddress,
+        meta: 'Address of manager',
+        description: 'The creator of the campaign. Creates requests to withdraw money',
+        style: { overflowWrap: 'break-word' }
+      }];
+
+      // https://react.semantic-ui.com/views/card#card-example-group-props
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_semantic_ui_react__["b" /* Card */].Group, { items: items, __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 42
         }
       });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */],
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'h3',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 48
+            }
+          },
+          'Campaign Show'
+        ),
+        this.renderCards()
+      );
     }
   }, {
     key: '__reactstandin__regenerateByEval',
@@ -114950,11 +114991,10 @@ module.exports = routes;
 
 /***/ }),
 
-/***/ 2:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 3:
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__("./pages/campaigns/detail.js");
-
+/* (ignored) */
 
 /***/ }),
 
@@ -114980,13 +115020,14 @@ module.exports = __webpack_require__("./pages/campaigns/detail.js");
 /***/ }),
 
 /***/ 7:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-/* (ignored) */
+module.exports = __webpack_require__("./pages/campaigns/detail.js");
+
 
 /***/ })
 
-},[2])
+},[7])
           return { page: comp.default }
         })
       ;
