@@ -2,25 +2,24 @@
  * File: /Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/components/ContributeForm.js
  */
 
-import React, { Component } from 'react';
-import { Form, Input, Message, Button } from 'semantic-ui-react';
+import React, { Component } from "react";
+import { Form, Input, Message, Button } from "semantic-ui-react";
 import Campaign from "../ethereum/campaign";
 import web3 from "../ethereum/web3";
-import { Router } from '../routes';
+import { Router } from "../routes";
 // https://react.semantic-ui.com/collections/form#form-example-form
 export default class ContributeForm extends Component {
-
   state = {
-    value: '',
+    value: "",
     loading: false,
-    errorMessage: ''
+    errorMessage: ""
   };
 
-  onSubmit = async (event) => {
+  onSubmit = async event => {
     event.preventDefault();
-    this.setState({ errorMessage: '' });
+    this.setState({ errorMessage: "" });
     this.setState({ loading: true });
-    console.log('this.props.address');
+    console.log("this.props.address");
     console.log(this.props.campaignAddress);
     const campaign = Campaign(this.props.campaignAddress);
 
@@ -28,9 +27,8 @@ export default class ContributeForm extends Component {
       const accounts = await web3.eth.getAccounts();
       await campaign.methods.contribute().send({
         from: accounts[0],
-        value: web3.utils.toWei(this.state.value, 'ether')
+        value: web3.utils.fromWei(this.state.value, "ether")
       });
-
 
       Router.replaceRoute(`/campaigns/${this.props.campaignAddress}`);
     } catch (error) {
@@ -39,19 +37,28 @@ export default class ContributeForm extends Component {
       this.setState({ errorMessage: error.message });
     }
     this.setState({ loading: false });
-  }
+  };
   render() {
     return (
       <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
         <Form.Field>
-          <label >Amount to Contribute</label>
+          <label>Amount to Contribute</label>
           <Input
             value={this.state.value}
             onChange={event => this.setState({ value: event.target.value })}
-            label="ether" labelPosition="right" />
+            label="ether"
+            labelPosition="right"
+          />
         </Form.Field>
-        <Message error header="Oops" content={this.state.errorMessage} color='teal' />
-        <Button primary loading={this.state.loading}>Contribute</Button>
+        <Message
+          error
+          header="Oops"
+          content={this.state.errorMessage}
+          color="teal"
+        />
+        <Button primary loading={this.state.loading}>
+          Contribute
+        </Button>
       </Form>
     );
   }

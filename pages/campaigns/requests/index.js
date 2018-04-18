@@ -16,6 +16,13 @@ export default class RequestIndex extends Component {
     const requestsCount = await campaign.methods.getRequestsCount().call();
     const approversCount = await campaign.methods.approversCount().call();
 
+    // * Solidity does not support returning arrays of structs yet
+    //  * This does not work!!!
+    ///   function getAllRequests() public view returns (Request[]) {
+    //      return requests;
+    //    }
+    //    * ​Instead, we have the length of the spendRequest array, so we can request each spendRequest one-by-one
+
     const requests = await Promise.all(
       Array(parseInt(requestsCount))
         .fill()
@@ -72,7 +79,7 @@ export default class RequestIndex extends Component {
             </Row>
           </Header>
           <Body>
-            <Row>
+            {/* <Row>
               <Cell>ID</Cell>
               <Cell>Description</Cell>
               <Cell>Amount</Cell>
@@ -80,7 +87,7 @@ export default class RequestIndex extends Component {
               <Cell>Approval Count</Cell>
               <Cell>Approve</Cell>
               <Cell>Finalize</Cell>
-            </Row>
+            </Row> */}
             {this.renderRows()}
           </Body>
         </Table>

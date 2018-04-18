@@ -115090,7 +115090,7 @@ var RequestIndex = function (_Component) {
           approversCount: _this2.props.approversCount,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 37
+            lineNumber: 44
           }
         });
       });
@@ -115111,7 +115111,7 @@ var RequestIndex = function (_Component) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 52
+            lineNumber: 59
           }
         },
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -115119,7 +115119,7 @@ var RequestIndex = function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 53
+              lineNumber: 60
             }
           },
           "Requests"
@@ -115128,7 +115128,7 @@ var RequestIndex = function (_Component) {
           __WEBPACK_IMPORTED_MODULE_4__routes__["Link"],
           { route: "/campaigns/" + this.props.address + "/requests/new", __source: {
               fileName: _jsxFileName,
-              lineNumber: 54
+              lineNumber: 61
             }
           },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -115136,14 +115136,14 @@ var RequestIndex = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 55
+                lineNumber: 62
               }
             },
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["a" /* Button */],
               { primary: true, floated: "right", style: { marginBottom: 10 }, __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 56
+                  lineNumber: 63
                 }
               },
               "Add Request"
@@ -115155,7 +115155,7 @@ var RequestIndex = function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 62
+              lineNumber: 69
             }
           },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -115163,7 +115163,7 @@ var RequestIndex = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 63
+                lineNumber: 70
               }
             },
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -115171,7 +115171,7 @@ var RequestIndex = function (_Component) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 64
+                  lineNumber: 71
                 }
               },
               __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -115179,7 +115179,7 @@ var RequestIndex = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 65
+                    lineNumber: 72
                   }
                 },
                 "ID"
@@ -115189,7 +115189,7 @@ var RequestIndex = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 66
+                    lineNumber: 73
                   }
                 },
                 "Description"
@@ -115199,7 +115199,7 @@ var RequestIndex = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 67
+                    lineNumber: 74
                   }
                 },
                 "Amount"
@@ -115209,7 +115209,7 @@ var RequestIndex = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 68
+                    lineNumber: 75
                   }
                 },
                 "Recipient"
@@ -115219,7 +115219,7 @@ var RequestIndex = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 69
+                    lineNumber: 76
                   }
                 },
                 "Approval Count"
@@ -115229,7 +115229,7 @@ var RequestIndex = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 70
+                    lineNumber: 77
                   }
                 },
                 "Approve"
@@ -115239,7 +115239,7 @@ var RequestIndex = function (_Component) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 71
+                    lineNumber: 78
                   }
                 },
                 "Finalize"
@@ -115251,88 +115251,9 @@ var RequestIndex = function (_Component) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 74
+                lineNumber: 81
               }
             },
-            __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-              Row,
-              {
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 75
-                }
-              },
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                Cell,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 76
-                  }
-                },
-                "ID"
-              ),
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                Cell,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 77
-                  }
-                },
-                "Description"
-              ),
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                Cell,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 78
-                  }
-                },
-                "Amount"
-              ),
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                Cell,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 79
-                  }
-                },
-                "Recipient"
-              ),
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                Cell,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 80
-                  }
-                },
-                "Approval Count"
-              ),
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                Cell,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 81
-                  }
-                },
-                "Approve"
-              ),
-              __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-                Cell,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 82
-                  }
-                },
-                "Finalize"
-              )
-            ),
             this.renderRows()
           )
         ),
@@ -115341,7 +115262,7 @@ var RequestIndex = function (_Component) {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 87
+              lineNumber: 94
             }
           },
           "Found ",
