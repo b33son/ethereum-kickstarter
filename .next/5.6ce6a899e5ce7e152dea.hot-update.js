@@ -29,14 +29,14 @@ var _jsxFileName = '/Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/c
 
 var _default = function _default() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Menu */],
+    __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Menu */],
     { style: { marginTop: "10px" }, __source: {
         fileName: _jsxFileName,
         lineNumber: 13
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Menu */].Item,
+      __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Menu */].Item,
       {
         __source: {
           fileName: _jsxFileName,
@@ -63,14 +63,14 @@ var _default = function _default() {
       )
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Menu */].Menu,
+      __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Menu */].Menu,
       { position: 'right', __source: {
           fileName: _jsxFileName,
           lineNumber: 19
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Menu */].Item,
+        __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Menu */].Item,
         {
           __source: {
             fileName: _jsxFileName,
@@ -97,7 +97,7 @@ var _default = function _default() {
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["e" /* Menu */].Item,
+        __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["g" /* Menu */].Item,
         {
           __source: {
             fileName: _jsxFileName,
@@ -179,7 +179,7 @@ var _jsxFileName = '/Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/c
 
 var _default = function _default(props) {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["b" /* Container */],
+    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["c" /* Container */],
     {
       __source: {
         fileName: _jsxFileName,
@@ -236,237 +236,7 @@ var _default = function _default(props) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Grid__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Grid/Grid.js");
-/* unused harmony reexport default */
-
-
-
-/***/ }),
-
-/***/ "./node_modules/semantic-ui-react/dist/es/collections/Message/Message.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__ = __webpack_require__("./node_modules/babel-runtime/helpers/extends.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck__ = __webpack_require__("./node_modules/babel-runtime/helpers/classCallCheck.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_createClass__ = __webpack_require__("./node_modules/babel-runtime/helpers/createClass.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_createClass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_createClass__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn__ = __webpack_require__("./node_modules/babel-runtime/helpers/possibleConstructorReturn.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits__ = __webpack_require__("./node_modules/babel-runtime/helpers/inherits.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash_isNil__ = __webpack_require__("./node_modules/lodash/isNil.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_lodash_isNil___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_lodash_isNil__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_lodash_without__ = __webpack_require__("./node_modules/lodash/without.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_lodash_without___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_lodash_without__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_classnames__ = __webpack_require__("./node_modules/classnames/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_classnames__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_prop_types__ = __webpack_require__("./node_modules/prop-types/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__lib__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/lib/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__elements_Icon__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Icon/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__MessageContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageContent.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__MessageHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageHeader.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__MessageList__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageList.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__MessageItem__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageItem.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * A message displays information that explains nearby content.
- * @see Form
- */
-
-var Message = function (_Component) {
-  __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits___default()(Message, _Component);
-
-  function Message() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
-    __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_classCallCheck___default()(this, Message);
-
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return _ret = (_temp = (_this = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn___default()(this, (_ref = Message.__proto__ || Object.getPrototypeOf(Message)).call.apply(_ref, [this].concat(args))), _this), _this.handleDismiss = function (e) {
-      var onDismiss = _this.props.onDismiss;
-
-
-      if (onDismiss) onDismiss(e, _this.props);
-    }, _temp), __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_possibleConstructorReturn___default()(_this, _ret);
-  }
-
-  __WEBPACK_IMPORTED_MODULE_2_babel_runtime_helpers_createClass___default()(Message, [{
-    key: 'render',
-    value: function render() {
-      var _props = this.props,
-          attached = _props.attached,
-          children = _props.children,
-          className = _props.className,
-          color = _props.color,
-          compact = _props.compact,
-          content = _props.content,
-          error = _props.error,
-          floating = _props.floating,
-          header = _props.header,
-          hidden = _props.hidden,
-          icon = _props.icon,
-          info = _props.info,
-          list = _props.list,
-          negative = _props.negative,
-          onDismiss = _props.onDismiss,
-          positive = _props.positive,
-          size = _props.size,
-          success = _props.success,
-          visible = _props.visible,
-          warning = _props.warning;
-
-
-      var classes = __WEBPACK_IMPORTED_MODULE_7_classnames___default()('ui', color, size, Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(compact, 'compact'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(error, 'error'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(floating, 'floating'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(hidden, 'hidden'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(icon, 'icon'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(info, 'info'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(negative, 'negative'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(positive, 'positive'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(success, 'success'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(visible, 'visible'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["C" /* useKeyOnly */])(warning, 'warning'), Object(__WEBPACK_IMPORTED_MODULE_10__lib__["D" /* useKeyOrValueAndKey */])(attached, 'attached'), 'message', className);
-
-      var dismissIcon = onDismiss && __WEBPACK_IMPORTED_MODULE_9_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__elements_Icon__["a" /* default */], { name: 'close', onClick: this.handleDismiss });
-      var rest = Object(__WEBPACK_IMPORTED_MODULE_10__lib__["s" /* getUnhandledProps */])(Message, this.props);
-      var ElementType = Object(__WEBPACK_IMPORTED_MODULE_10__lib__["r" /* getElementType */])(Message, this.props);
-
-      if (!__WEBPACK_IMPORTED_MODULE_10__lib__["d" /* childrenUtils */].isNil(children)) {
-        return __WEBPACK_IMPORTED_MODULE_9_react___default.a.createElement(
-          ElementType,
-          __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({}, rest, { className: classes }),
-          dismissIcon,
-          children
-        );
-      }
-
-      return __WEBPACK_IMPORTED_MODULE_9_react___default.a.createElement(
-        ElementType,
-        __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({}, rest, { className: classes }),
-        dismissIcon,
-        __WEBPACK_IMPORTED_MODULE_11__elements_Icon__["a" /* default */].create(icon),
-        (!__WEBPACK_IMPORTED_MODULE_5_lodash_isNil___default()(header) || !__WEBPACK_IMPORTED_MODULE_5_lodash_isNil___default()(content) || !__WEBPACK_IMPORTED_MODULE_5_lodash_isNil___default()(list)) && __WEBPACK_IMPORTED_MODULE_9_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_12__MessageContent__["a" /* default */],
-          null,
-          __WEBPACK_IMPORTED_MODULE_13__MessageHeader__["a" /* default */].create(header),
-          __WEBPACK_IMPORTED_MODULE_14__MessageList__["a" /* default */].create(list),
-          Object(__WEBPACK_IMPORTED_MODULE_10__lib__["j" /* createHTMLParagraph */])(content)
-        )
-      );
-    }
-  }]);
-
-  return Message;
-}(__WEBPACK_IMPORTED_MODULE_9_react__["Component"]);
-
-Message._meta = {
-  name: 'Message',
-  type: __WEBPACK_IMPORTED_MODULE_10__lib__["b" /* META */].TYPES.COLLECTION
-};
-Message.Content = __WEBPACK_IMPORTED_MODULE_12__MessageContent__["a" /* default */];
-Message.Header = __WEBPACK_IMPORTED_MODULE_13__MessageHeader__["a" /* default */];
-Message.List = __WEBPACK_IMPORTED_MODULE_14__MessageList__["a" /* default */];
-Message.Item = __WEBPACK_IMPORTED_MODULE_15__MessageItem__["a" /* default */];
-Message.handledProps = ['as', 'attached', 'children', 'className', 'color', 'compact', 'content', 'error', 'floating', 'header', 'hidden', 'icon', 'info', 'list', 'negative', 'onDismiss', 'positive', 'size', 'success', 'visible', 'warning'];
-/* unused harmony default export */ var _unused_webpack_default_export = (Message);
-Message.propTypes =  true ? {
-  /** An element type to render as (string or function). */
-  as: __WEBPACK_IMPORTED_MODULE_10__lib__["n" /* customPropTypes */].as,
-
-  /** A message can be formatted to attach itself to other content. */
-  attached: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool, __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.oneOf(['bottom', 'top'])]),
-
-  /** Primary content. */
-  children: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.node,
-
-  /** Additional classes. */
-  className: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.string,
-
-  /** A message can be formatted to be different colors. */
-  color: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.oneOf(__WEBPACK_IMPORTED_MODULE_10__lib__["c" /* SUI */].COLORS),
-
-  /** A message can only take up the width of its content. */
-  compact: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool,
-
-  /** Shorthand for primary content. */
-  content: __WEBPACK_IMPORTED_MODULE_10__lib__["n" /* customPropTypes */].contentShorthand,
-
-  /** A message may be formatted to display a negative message. Same as `negative`. */
-  error: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool,
-
-  /** A message can float above content that it is related to. */
-  floating: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool,
-
-  /** Shorthand for MessageHeader. */
-  header: __WEBPACK_IMPORTED_MODULE_10__lib__["n" /* customPropTypes */].itemShorthand,
-
-  /** A message can be hidden. */
-  hidden: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool,
-
-  /** A message can contain an icon. */
-  icon: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.oneOfType([__WEBPACK_IMPORTED_MODULE_10__lib__["n" /* customPropTypes */].itemShorthand, __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool]),
-
-  /** A message may be formatted to display information. */
-  info: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool,
-
-  /** Array shorthand items for the MessageList. Mutually exclusive with children. */
-  list: __WEBPACK_IMPORTED_MODULE_10__lib__["n" /* customPropTypes */].collectionShorthand,
-
-  /** A message may be formatted to display a negative message. Same as `error`. */
-  negative: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool,
-
-  /**
-   * A message that the user can choose to hide.
-   * Called when the user clicks the "x" icon. This also adds the "x" icon.
-   *
-   * @param {SyntheticEvent} event - React's original SyntheticEvent.
-   * @param {object} data - All props.
-   */
-  onDismiss: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.func,
-
-  /** A message may be formatted to display a positive message.  Same as `success`. */
-  positive: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool,
-
-  /** A message can have different sizes. */
-  size: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.oneOf(__WEBPACK_IMPORTED_MODULE_6_lodash_without___default()(__WEBPACK_IMPORTED_MODULE_10__lib__["c" /* SUI */].SIZES, 'medium')),
-
-  /** A message may be formatted to display a positive message.  Same as `positive`. */
-  success: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool,
-
-  /** A message can be set to visible to force itself to be shown. */
-  visible: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool,
-
-  /** A message may be formatted to display warning messages. */
-  warning: __WEBPACK_IMPORTED_MODULE_8_prop_types___default.a.bool
-} : {};
-
-/***/ }),
-
-/***/ "./node_modules/semantic-ui-react/dist/es/collections/Message/index.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Message__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/Message.js");
-/* unused harmony reexport default */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Grid__["a"]; });
 
 
 
@@ -507,7 +277,7 @@ Message.propTypes =  true ? {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__collections_Breadcrumb_BreadcrumbSection__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Breadcrumb/BreadcrumbSection.js");
 /* unused harmony reexport BreadcrumbSection */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__collections_Form__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_15__collections_Form__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_15__collections_Form__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__collections_Form_FormButton__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/FormButton.js");
 /* unused harmony reexport FormButton */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__collections_Form_FormCheckbox__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/FormCheckbox.js");
@@ -527,13 +297,13 @@ Message.propTypes =  true ? {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__collections_Form_FormTextArea__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Form/FormTextArea.js");
 /* unused harmony reexport FormTextArea */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__collections_Grid__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Grid/index.js");
-/* unused harmony reexport Grid */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_25__collections_Grid__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__collections_Grid_GridColumn__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Grid/GridColumn.js");
 /* unused harmony reexport GridColumn */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__collections_Grid_GridRow__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Grid/GridRow.js");
 /* unused harmony reexport GridRow */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__collections_Menu__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_28__collections_Menu__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_28__collections_Menu__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__collections_Menu_MenuHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuHeader.js");
 /* unused harmony reexport MenuHeader */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__collections_Menu_MenuItem__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuItem.js");
@@ -541,7 +311,7 @@ Message.propTypes =  true ? {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__collections_Menu_MenuMenu__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Menu/MenuMenu.js");
 /* unused harmony reexport MenuMenu */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__collections_Message__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/index.js");
-/* unused harmony reexport Message */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_32__collections_Message__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__collections_Message_MessageContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageContent.js");
 /* unused harmony reexport MessageContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__collections_Message_MessageHeader__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/collections/Message/MessageHeader.js");
@@ -573,7 +343,7 @@ Message.propTypes =  true ? {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__elements_Button_ButtonOr__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Button/ButtonOr.js");
 /* unused harmony reexport ButtonOr */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__elements_Container__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Container/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_48__elements_Container__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_48__elements_Container__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__elements_Divider__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Divider/index.js");
 /* unused harmony reexport Divider */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__elements_Flag__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Flag/index.js");
@@ -593,7 +363,7 @@ Message.propTypes =  true ? {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__elements_Image_ImageGroup__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Image/ImageGroup.js");
 /* unused harmony reexport ImageGroup */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__elements_Input__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Input/index.js");
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_58__elements_Input__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_58__elements_Input__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__elements_Label__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Label/index.js");
 /* unused harmony reexport Label */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__elements_Label_LabelDetail__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/elements/Label/LabelDetail.js");
@@ -713,7 +483,7 @@ Message.propTypes =  true ? {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__views_Advertisement__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Advertisement/index.js");
 /* unused harmony reexport Advertisement */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__views_Card_Card__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Card/Card.js");
-/* unused harmony reexport Card */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_118__views_Card_Card__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_119__views_Card_CardContent__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Card/CardContent.js");
 /* unused harmony reexport CardContent */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_120__views_Card_CardDescription__ = __webpack_require__("./node_modules/semantic-ui-react/dist/es/views/Card/CardDescription.js");
@@ -1167,45 +937,7 @@ var _default = RequestIndex;
   
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
-/***/ }),
-
-/***/ "./routes.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/*
- * File: /Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/routes.js
- * Created Date: Thursday April 5th 2018
- * Modified By: M.Beeson
- */
-
-var routes = __webpack_require__("./node_modules/next-routes/dist/index.js")();
-routes.add('/campaigns/new', '/campaigns/new').add('/campaigns/:address', '/campaigns/detail').add('/campaigns/:address/requests', '/campaigns/requests/index').add('/campaigns/:address/requests/new', '/campaigns/requests/new');
-module.exports = routes;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__("./node_modules/react-hot-loader/index.js").default;
-
-  var leaveModule = __webpack_require__("./node_modules/react-hot-loader/index.js").leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(routes, 'routes', '/Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/routes.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/webpack/buildin/module.js")(module)))
-
 /***/ })
 
 })
-//# sourceMappingURL=5.cc157e90c49b2e93c5f0.hot-update.js.map
+//# sourceMappingURL=5.6ce6a899e5ce7e152dea.hot-update.js.map

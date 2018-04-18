@@ -67,61 +67,22 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 17);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
+/******/ ({
 
-module.exports = require("react");
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-module.exports = require("semantic-ui-react");
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
- * File: /Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/routes.js
- * Created Date: Thursday April 5th 2018
- * Modified By: M.Beeson
- */
-
-var routes = __webpack_require__(6)();
-routes.add('/campaigns/new', '/campaigns/new').add('/campaigns/:address', '/campaigns/detail').add('/campaigns/:address/requests', '/campaigns/requests/index').add('/campaigns/:address/requests/new', '/campaigns/requests/new');
-module.exports = routes;
-
-/***/ }),
-/* 3 */,
-/* 4 */
-/***/ (function(module, exports) {
-
-module.exports = require("babel-runtime/regenerator");
-
-/***/ }),
-/* 5 */
+/***/ "./components/Header.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-// EXTERNAL MODULE: external "react"
-var external__react_ = __webpack_require__(0);
-var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
-
-// EXTERNAL MODULE: external "semantic-ui-react"
-var external__semantic_ui_react_ = __webpack_require__(1);
-var external__semantic_ui_react__default = /*#__PURE__*/__webpack_require__.n(external__semantic_ui_react_);
-
-// EXTERNAL MODULE: ./routes.js
-var routes = __webpack_require__(2);
-var routes_default = /*#__PURE__*/__webpack_require__.n(routes);
-
-// CONCATENATED MODULE: ./components/Header.js
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes__ = __webpack_require__("./routes.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__routes__);
+var _jsxFileName = '/Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/components/Header.js';
 /*
  * File: /Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/components/header.js
  * Created Date: Thursday April 5th 2018
@@ -132,48 +93,98 @@ var routes_default = /*#__PURE__*/__webpack_require__.n(routes);
 
 
 
-/* harmony default export */ var Header = (function () {
-  return external__react__default.a.createElement(
-    external__semantic_ui_react_["Menu"],
-    { style: { marginTop: "10px" } },
-    external__react__default.a.createElement(
-      external__semantic_ui_react_["Menu"].Item,
-      null,
-      external__react__default.a.createElement(
-        routes["Link"],
-        { route: '/' },
-        external__react__default.a.createElement(
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"],
+    { style: { marginTop: "10px" }, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"].Item,
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_2__routes__["Link"],
+        { route: '/', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'a',
-          null,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 16
+            }
+          },
           'Ethereum Kickstarter'
         )
       )
     ),
-    external__react__default.a.createElement(
-      external__semantic_ui_react_["Menu"].Menu,
-      { position: 'right' },
-      external__react__default.a.createElement(
-        external__semantic_ui_react_["Menu"].Item,
-        null,
-        external__react__default.a.createElement(
-          routes["Link"],
-          { route: '/' },
-          external__react__default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"].Menu,
+      { position: 'right', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"].Item,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_2__routes__["Link"],
+          { route: '/', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'a',
-            null,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 21
+              }
+            },
             'Campaigns'
           )
         )
       ),
-      external__react__default.a.createElement(
-        external__semantic_ui_react_["Menu"].Item,
-        null,
-        external__react__default.a.createElement(
-          routes["Link"],
-          { route: '/campaigns/new' },
-          external__react__default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_semantic_ui_react__["Menu"].Item,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_2__routes__["Link"],
+          { route: '/campaigns/new', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 24
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'a',
-            null,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 24
+              }
+            },
             '+'
           )
         )
@@ -181,11 +192,21 @@ var routes_default = /*#__PURE__*/__webpack_require__.n(routes);
     )
   );
 });
-// EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__(7);
-var head__default = /*#__PURE__*/__webpack_require__.n(head_);
 
-// CONCATENATED MODULE: ./components/Layout.js
+/***/ }),
+
+/***/ "./components/Layout.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Header__ = __webpack_require__("./components/Header.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head__ = __webpack_require__("next/head");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_head__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__);
+var _jsxFileName = '/Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/components/Layout.js';
 /*
  * File: /Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/components/layout.js
  * Created Date: Thursday April 5th 2018
@@ -196,64 +217,57 @@ var head__default = /*#__PURE__*/__webpack_require__.n(head_);
 
 
 
-/* harmony default export */ var Layout = __webpack_exports__["a"] = (function (props) {
-  return external__react__default.a.createElement(
-    external__semantic_ui_react_["Container"],
-    null,
-    external__react__default.a.createElement(
-      head__default.a,
-      null,
-      external__react__default.a.createElement('link', { rel: 'stylesheet', href: '//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css' })
+/* harmony default export */ __webpack_exports__["a"] = (function (props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["Container"],
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_2_next_head___default.a,
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('link', { rel: 'stylesheet', href: '//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        }
+      })
     ),
-    external__react__default.a.createElement(Header, null),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17
+      }
+    }),
     props.children
   );
 });
 
 /***/ }),
-/* 6 */
-/***/ (function(module, exports) {
 
-module.exports = require("next-routes");
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports = require("next/head");
-
-/***/ }),
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(18);
-
-
-/***/ }),
-/* 18 */
+/***/ "./pages/campaigns/requests/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__("babel-runtime/regenerator");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Layout__ = __webpack_require__("./components/Layout.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__ = __webpack_require__("semantic-ui-react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__routes__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__routes__ = __webpack_require__("./routes.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__routes__);
 
+var _jsxFileName = '/Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/pages/campaigns/requests/index.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -289,21 +303,44 @@ var RequestIndex = function (_Component) {
       console.log(this.props);
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_2__components_Layout__["a" /* default */],
-        null,
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19
+          }
+        },
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           'h3',
-          null,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 20
+            }
+          },
           'Requests'
         ),
         __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_4__routes__["Link"],
-          { route: '/campaigns/' + this.props.address + '/requests/new' },
+          { route: '/campaigns/' + this.props.address + '/requests/new', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            }
+          },
           __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
             'a',
-            null,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 22
+              }
+            },
             __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
               __WEBPACK_IMPORTED_MODULE_3_semantic_ui_react__["Button"],
-              { primary: true },
+              { primary: true, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 23
+                }
+              },
               'Add Request'
             )
           )
@@ -343,5 +380,65 @@ var RequestIndex = function (_Component) {
 
 /* harmony default export */ __webpack_exports__["default"] = (RequestIndex);
 
+/***/ }),
+
+/***/ "./routes.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+ * File: /Users/michaelbeeson/Documents/VSCode/ethereum/kickstarter/routes.js
+ * Created Date: Thursday April 5th 2018
+ * Modified By: M.Beeson
+ */
+
+var routes = __webpack_require__("next-routes")();
+routes.add('/campaigns/new', '/campaigns/new').add('/campaigns/:address', '/campaigns/detail').add('/campaigns/:address/requests', '/campaigns/requests/index').add('/campaigns/:address/requests/new', '/campaigns/requests/new');
+module.exports = routes;
+
+/***/ }),
+
+/***/ 4:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./pages/campaigns/requests/index.js");
+
+
+/***/ }),
+
+/***/ "babel-runtime/regenerator":
+/***/ (function(module, exports) {
+
+module.exports = require("babel-runtime/regenerator");
+
+/***/ }),
+
+/***/ "next-routes":
+/***/ (function(module, exports) {
+
+module.exports = require("next-routes");
+
+/***/ }),
+
+/***/ "next/head":
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "react":
+/***/ (function(module, exports) {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ "semantic-ui-react":
+/***/ (function(module, exports) {
+
+module.exports = require("semantic-ui-react");
+
 /***/ })
-/******/ ]);
+
+/******/ });
+//# sourceMappingURL=requests.js.map
